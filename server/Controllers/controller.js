@@ -1,10 +1,14 @@
 const asyncHandler = require('express-async-handler')
 
+const Test = require('../Models/testModel')
+
 // @desc get data
 // @route GET /test/
 // @access Private
 const getData = asyncHandler(async (req, res) => {
-    res.status(200).json({ message: 'Get is working' })
+    const test = await Test.find()
+
+    res.status(200).json(test)
 })
 
 // @desc set data
