@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+  # Node Backend
+  api:
+    container_name: backend_container
+    build: ./server
+    ports:
+      - 8000:8000
+    environment:
+      NODE_ENV: development
+      PORT: 8000
+      MONGO_URI: mongodb+srv://mission5123:mission5123@missionprojectcluster.dt4phxs.mongodb.net/mission5?retryWrites=true&w=majority
+    depends_on:
+      - mongo_db
+  
+  # React Frontend
+  client:
+    container_name: frontend_container
+    build: ./client
+    ports:
+      - 3000:3000
+    volumes:
+      - data:/app/node_modules
+      - ./client:/app
+    command: npm run start
+
+    # Mongo services
+  mongo_db:
+    container_name: db_container
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mission5123
+      MONGO_INITDB_ROOT_PASSWORD: mission5123
+      MONGO_INITDB_DATABASE: tests
+    volumes:
+      - mongo_db_data:/data/db
+
+volumes:
+  data:
+  mongo_db_data:
