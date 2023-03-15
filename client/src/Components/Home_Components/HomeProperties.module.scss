@@ -1,0 +1,19 @@
+@use '../../Styles/base' as b;
+@use '../../Styles/base' as m;
+
+.home_properties_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw;
+
+    h2 {
+        color: b.$redmain;
+        font-size: xx-large;
+    }
+
+    .properties_block_container {
+        display: flex;
+        flex-direction: row;
+        margin: 5vh 0 0 0;
+    }
+}

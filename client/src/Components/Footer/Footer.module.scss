@@ -1,0 +1,75 @@
+@use '../../Styles/base' as b;
+@use '../../Styles/base' as m;
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    padding: 10vh 10vw;
+    background-color: b.$graymain;
+
+    .left_side_block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: flex-start;
+        align-items: flex-start;
+        row-gap: 2vw;
+        column-gap: 5vw;
+
+        .footer_nav_block {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: b.$redmain;
+                margin: 0 0 1vh 0;
+            }
+            
+            .footerlink {
+                color: black;
+                text-decoration: none;
+                margin: 5px 0;
+                
+            }
+        }
+    }
+
+    .seperator {
+        background-color: black;
+        margin: 0 5vw 0 5vw;
+        height: 50vh;
+        width: 1px;
+    }
+
+    .right_side_block {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-weight: bold;
+        }
+
+        .email_input {
+            background-color: white;
+            height: 5vh;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            margin: 25px 0 0 0;
+            padding: 0 5px;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                color: white;
+                padding: 7px 25px;
+                border: 0 solid;
+                border-radius: 5px;
+                background-color: b.$redmain;
+            }
+        }
+    }
+}

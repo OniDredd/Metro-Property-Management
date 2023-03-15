@@ -1,3 +1,6 @@
+@use '/client/src/Styles/base' as b;
+@use '/client/src/Styles/media' as m;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

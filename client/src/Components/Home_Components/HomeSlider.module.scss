@@ -1,0 +1,12 @@
+.slider_container{ 
+    padding: 15vh 10vw;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    .sliderarrow {
+        width: 5vw;
+    }
+}
