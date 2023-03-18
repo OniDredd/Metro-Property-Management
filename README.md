@@ -17,8 +17,7 @@ Install NPM Packages.
 
 # Roadmap
 
-* Creating the components for the client.
-* Creating all the backend functionality that goes with that client.
+* Creating the rest of the pages and components for the client.
 
 # Contributing
 
