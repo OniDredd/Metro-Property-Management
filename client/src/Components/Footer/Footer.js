@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss'
 import { Link } from 'react-router-dom'
+import locationicon from '../../Assets/locationicon.svg'
 
 const Footer = () => {
     return ( 
@@ -37,11 +38,21 @@ const Footer = () => {
             <div className={ styles.right_side_block }>
                 <h2>Subscribe to our Newsletter</h2>
                 <div className={ styles.email_input }>
-                   <p>Placeholder text</p>
+                   <input  type='text' placeholder='' />
                    <button>Search</button>
                 </div>
                 <div className={ styles.socialmedia_container }>
                     
+                </div>
+                <div className={ styles.location_container }>
+                    <img src={ locationicon } alt="" />
+                    <p>
+                        Level 33, ANZ Centre, 23-29 Albert St,
+                        <br/>
+                        Auckland 1010, New Zealand</p>
+                </div>
+                <div className={ styles.copyright_container }>
+                    <p>© 2022 Metro NZ Property Management | Disputes Process</p>
                 </div>
                 
             </div>

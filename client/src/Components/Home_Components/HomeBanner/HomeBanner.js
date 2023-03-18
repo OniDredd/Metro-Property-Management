@@ -9,7 +9,10 @@ const HomeBanner = () => {
                     <br/>begins with us...
                 </h1>
                 <div className={ styles.banner_input }>
-                   <p>Placeholder text</p>
+                   <input 
+                    type="text" 
+                    placeholder="Enter an address, city or post code."
+                   />
                    <button>Search</button>
                 </div>
             </div>

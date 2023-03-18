@@ -1,5 +1,5 @@
-@use '../../Styles/base' as b;
-@use '../../Styles/base' as m;
+@use '../../../Styles/base' as b;
+@use '../../../Styles/base' as m;
 
 .properties_block {
     background-color: b.$lightgray;
@@ -62,5 +62,11 @@
         border-radius: 10px;
         background-color: b.$whitemain;
         text-transform: uppercase;
+        cursor: pointer;
+        transition: 200ms;
+        &:hover {
+            color: b.$whitemain;
+            background-color: b.$redmain;
+        }
     }
 }

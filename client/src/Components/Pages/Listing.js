@@ -1,6 +1,8 @@
+import ImageUploader from "../Home_Components/ImageUploader/ImageUploader";
+
 function Listing(){
     return(
-        <h1>Listing Page</h1>
+        <ImageUploader />
     )
 }
 

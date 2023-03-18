@@ -1,0 +1,21 @@
+@use '../../../Styles/base' as b;
+@use '../../../Styles/media' as m;
+
+.slider_container {
+    padding: 10vh 10vw 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-items: center;
+    align-content: center;
+
+    div {
+        align-items: center;
+        text-align: center;
+    
+        h3  {
+            color: b.$redmain;
+        }
+    }
+}
+

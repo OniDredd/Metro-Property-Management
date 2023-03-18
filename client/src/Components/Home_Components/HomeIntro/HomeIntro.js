@@ -1,10 +1,10 @@
 import styles from './HomeIntro.module.scss'
-import logo1 from '../../Assets/westpaclogo.svg'
-import logo2 from '../../Assets/northhamptonlogo.svg'
-import houseicon from '../../Assets/houseicon.svg'
-import housesicon from '../../Assets/housesicon.svg'
-import wrenchicon from '../../Assets/wrenchicon.svg'
-import awardicon from '../../Assets/awardicon.svg'
+import logo1 from '../../../Assets/westpaclogo.svg'
+import logo2 from '../../../Assets/northhamptonlogo.svg'
+import houseicon from '../../../Assets/houseicon.svg'
+import housesicon from '../../../Assets/housesicon.svg'
+import wrenchicon from '../../../Assets/wrenchicon.svg'
+import awardicon from '../../../Assets/awardicon.svg'
 
 const HomeIntro = () => {
 

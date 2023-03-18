@@ -32,7 +32,9 @@
                 color: black;
                 text-decoration: none;
                 margin: 5px 0;
-                
+                &:hover {
+                    color: b.$redmain;
+                }
             }
         }
     }
@@ -47,6 +49,7 @@
     .right_side_block {
         display: flex;
         flex-direction: column;
+        
 
         h2 {
             font-weight: bold;
@@ -63,12 +66,34 @@
             justify-content: space-between;
             align-items: center;
 
+            input {
+                height: 80%;
+                width: 100%;
+                border: 0 solid transparent;
+            }
+
             button {
                 color: white;
                 padding: 7px 25px;
                 border: 0 solid;
                 border-radius: 5px;
                 background-color: b.$redmain;
+                transition: 200ms;
+                cursor: pointer;
+                &:hover {
+                    background-color: b.$graymain;
+                }
+            }
+        }
+
+        .location_container {
+            display: flex;
+            flex-direction: row;
+            margin: 5vh 0 5vh 0;
+
+            img {
+                width: 5vw;
+                margin: 0 20px 0 0;
             }
         }
     }

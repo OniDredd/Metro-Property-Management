@@ -10,7 +10,7 @@ services:
     environment:
       NODE_ENV: development
       PORT: 8000
-      MONGO_URI: mongodb+srv://mission5123:mission5123@missionprojectcluster.dt4phxs.mongodb.net/mission5?retryWrites=true&w=majority
+      MONGO_URI: mongodb+srv://mission5123:mission5123@missionprojectcluster.dt4phxs.mongodb.net/ADV-Mission5?retryWrites=true&w=majority
     depends_on:
       - mongo_db
   
@@ -33,7 +33,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: mission5123
       MONGO_INITDB_ROOT_PASSWORD: mission5123
-      MONGO_INITDB_DATABASE: tests
+      MONGO_INITDB_DATABASE: ADV-Mission5
     volumes:
       - mongo_db_data:/data/db
 

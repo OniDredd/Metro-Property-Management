@@ -13,8 +13,8 @@ function App() {
     <Navbar />
     <Routes>
       <Route path='/' element={ <Home/> } />
-      <Route path='/Property' element={ <Property /> } />
-      <Route path='/PropertyPage' element={ <Listing /> } />
+      <Route path='/Property' element={ <Listing /> } />
+      <Route path='/PropertyPage' element={ <Property /> } />
       {/* <Route path='/' element={ <Contact/> } /> */}
     </Routes>
     <Footer />
