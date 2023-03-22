@@ -1,6 +1,6 @@
-# ADV-Mission5
+# Metro Property Limited | ADV-Mission5
 
-The project was created from a brief given from Mission Ready.
+The project was created from a brief given from Mission Ready. It is developing one page for a company by the name of metro property limited.
 
 # Prerequisites
 
